@@ -34,7 +34,7 @@ function renderPizza(){
 	for (idx = 0; idx < com.dawgpizza.menu.pizzas.length; ++idx) {
 		pizza = com.dawgpizza.menu.pizzas[idx];
 		instance = template.clone();
-		instance.find('.name').html(pizza.name);
+		instance.find('.pizzaname').html(pizza.name);
 		instance.find('.description').html(pizza.description);
 		instance.find('.prices').html("$"+pizza.prices[0]+" $"+pizza.prices[1]+" $"+pizza.prices[2]);
 		instance.removeClass('template');
