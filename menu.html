@@ -42,38 +42,54 @@
 			<!-- Menu selector  -->
 			<div class="menu-ui">
 				<div class="btn-group">
-					<button type="button" class="btn btn-default active" data-sortby="last">Pizza</button>
-					<button type="button" class="btn btn-default" data-sortby="title">Drink</button>
-					<button type="button" class="btn btn-default" data-sortby="dept">Dessert</button>
+					<button type="button" class="btn btn-default active" data-type="pizzas">Pizza</button>
+					<button type="button" class="btn btn-default" data-type="drinks">Drink</button>
+					<button type="button" class="btn btn-default" data-type="desserts">Dessert</button>
 				</div>
 			</div>
 
+			<h3 class="menuType">Pizzas:</h3>
 
-			<h3>Pizzas:</h3>
+			<div class="menu">
+			</div>
+
+			<div class="pizza-menu">
 				<p>All of our pizzas are made with hand-thrown crust, baked in real wood ovens. Choose from one of these sizes:</p>
 				<ul>
 					<li>Small (12")</li>
 					<li>Medium (14")</li>
 					<li>Large (17")</li>
 				</ul>
-			<div class="pizzainfo">
-				All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.
+				<div class="pizzainfo">
+					All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.
+				</div>
+			
+				<div class="row">
+					<div class="col-md-6">
+						<h4>Meat Pies:</h4>
+						<dl class="meat-pizza">
+						</dl>
+					</div>
+					<div class="col-md-6">
+						<h4>Vegetarian Pies:</h4>
+						<dl class="veggie-pizza">
+						</dl>
+					</div>
+				</div>
 			</div>
-
-
-			<!-- container for the generated address book entries -->
-			<div class="generated-menu"></div>
 
 			<!-- template card for each entry
              this will not be displayed, only used by code -->
-			<div class="template menu">
-				<img class="pic" src="" alt=""/>
-				<div class="details">
-					<h2 class="name"><span class="first"></span> <span class="last"></span></h2>
-					<p class="lead title"></p>
-					<p><span class="dept"></span></p>
-				</div>
-			</div>
+			<dl class="pizza template">
+				<dt class="pizzaname"></dt>
+				<dd class="description"></dd>
+				<dd class="prices"></dd>
+			</dl>
+
+			<dl class="template">
+				<dt class="name"></dt>
+				<dd class="price"></dd>
+			</dl>			
 
 		</div> <!-- /container -->
 
@@ -93,8 +109,8 @@
 		<script src="dist/js/bootstrap.min.js"></script>
 
 		<!-- direct link to menu script -->
-		<script src="http://www.dawgpizza.com/orders/menu.js"></script>
+		<script src="js/menu.js"></script>
 		<!-- my own JavaScript file, which will use the menu data structure -->
-		<script src="js/menu-manager.js"></script>
+		<script src="js/menu-generator.js"></script>
 	</body>
 </html>

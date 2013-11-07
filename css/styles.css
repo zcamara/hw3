@@ -38,6 +38,10 @@ body {
 	text-align: center;
 }
 
+.template {
+	display: none;
+}
+
 .maincontainer {
 	border-radius: 50px;
 	width: 75%;
@@ -60,6 +64,18 @@ body {
 	margin-left: 48%;
 }
 
+#small {
+	width: 40%;
+}
+
+#small dd {
+	text-align: center;
+}
+
+#small dt {
+	text-align: center;
+}
+
 .maincontainer:hover {
 	opacity: 1;
 	-webkit-transition: all 1s;
@@ -71,6 +87,11 @@ body {
 
 h2 {
 	text-align: center;
+	padding-bottom: 1em;
+}
+
+.menu-ui {
+	padding-bottom: 1em;
 }
 
 iframe {
@@ -131,6 +152,10 @@ dl img {
 		margin-left: auto;
 		width: 99%;
 	}
+
+	#small {
+	width: 80%;
+}
 }
 
 .twitter-follow-button {
@@ -150,6 +175,15 @@ dl img {
 dd {
 	font-style: italic;
 }
+
+h3:first-letter {
+	text-transform:capitalize;
+}
+
+h3 {
+	text-align: center;
+}
+
 
 /* title */
 .navbar-default .navbar-brand {
